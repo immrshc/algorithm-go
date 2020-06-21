@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	sort.PrintResult(randSlice(200))
+	sort.PrintResult(randSlice(50))
 }
 
 func randSlice(size int) []int {

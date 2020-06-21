@@ -3,10 +3,12 @@ package sort
 import "fmt"
 
 func PrintResult(items []int) {
-	fmt.Printf("unsorted: %v\n", items)
+	unsortedItems := append([]int{}, items...)
 	// BubbleSort(items)
 	// SelectionSort(items)
 	// InsertionSort(items)
-	ShellSort(items)
+	// ShellSort(items)
+	QuickSort(items)
+	fmt.Printf("unsorted: %v\n", unsortedItems)
 	fmt.Printf("sorted:   %v\n", items)
 }
