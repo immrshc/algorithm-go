@@ -12,14 +12,6 @@ if [ "$COMMITTED_GO_FILES" ]; then
   fi
 fi
 
-# Execute go vet
-if [ "$COMMITTED_GO_FILES" ]; then
-  echo "$COMMITTED_GO_FILES" | xargs go vet
-  if [ $? -ne 0 ]; then
-    exit 1
-  fi
-fi
-
 # Execute goimports
 if [ "$COMMITTED_GO_FILES" ]; then
   UN_FORMATTED_FILES=$(echo "$COMMITTED_GO_FILES" | xargs goimports -l)
