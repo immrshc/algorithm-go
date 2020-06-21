@@ -7,9 +7,7 @@ func BubbleSort(items []int) {
 		// 残りの範囲で、後ろから順に比較する
 		for j := n - 1; i < j; j-- {
 			if items[j-1] > items[j] {
-				tmp := items[j-1]
-				items[j-1] = items[j]
-				items[j] = tmp
+				items[j-1], items[j] = items[j], items[j-1]
 			}
 		}
 	}

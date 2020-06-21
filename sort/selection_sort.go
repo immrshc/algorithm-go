@@ -13,8 +13,6 @@ func SelectionSort(items []int) {
 			}
 		}
 		// 順番を入れ替える
-		tmp := items[i]
-		items[i] = items[lowestIndex]
-		items[lowestIndex] = tmp
+		items[i], items[lowestIndex] = items[lowestIndex], items[i]
 	}
 }
