@@ -10,7 +10,8 @@ func PrintResult(items []int) {
 	// ShellSort(items)
 	// QuickSortByRecursion(items)
 	// QuickSortByStack(items)
-	MergeSort(items)
+	// MergeSort(items)
+	HeapSort(items)
 	fmt.Printf("unsorted: %v\n", unsortedItems)
 	fmt.Printf("sorted:   %v\n", items)
 }
