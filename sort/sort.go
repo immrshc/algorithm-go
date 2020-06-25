@@ -12,6 +12,7 @@ func PrintResult(items []int) {
 	// QuickSortByStack(items)
 	// MergeSort(items)
 	HeapSort(items)
+	// BinSort()
 	fmt.Printf("unsorted: %v\n", unsortedItems)
 	fmt.Printf("sorted:   %v\n", items)
 }
