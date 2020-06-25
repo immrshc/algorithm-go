@@ -3,7 +3,7 @@ package sort
 import "fmt"
 
 func PrintResult(items []int) {
-	unsortedItems := append([]int{}, items...)
+	// unsortedItems := append([]int{}, items...)
 	// BubbleSort(items)
 	// SelectionSort(items)
 	// InsertionSort(items)
@@ -11,8 +11,9 @@ func PrintResult(items []int) {
 	// QuickSortByRecursion(items)
 	// QuickSortByStack(items)
 	// MergeSort(items)
-	HeapSort(items)
+	// HeapSort(items)
 	// BinSort()
-	fmt.Printf("unsorted: %v\n", unsortedItems)
+	CountingSort()
+	// fmt.Printf("unsorted: %v\n", unsortedItems)
 	fmt.Printf("sorted:   %v\n", items)
 }
