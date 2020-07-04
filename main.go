@@ -1,21 +1,10 @@
 package main
 
 import (
-	"math/rand"
-	"time"
-
-	"github.com/shoichiimamura/algorithm-go/sort"
+	"github.com/shoichiimamura/algorithm-go/search"
 )
 
 func main() {
-	sort.PrintResult(randSlice(50))
-}
-
-func randSlice(size int) []int {
-	rand.Seed(time.Now().UnixNano())
-	slice := make([]int, size)
-	for i := 0; i < size; i++ {
-		slice[i] = rand.Intn(100)
-	}
-	return slice
+	// sort.PrintResult()
+	search.Backtracking()
 }
